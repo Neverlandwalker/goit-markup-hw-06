@@ -45,7 +45,7 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color:var(--primary-text-color) ;
-    cursor: pointer;
+    
 }
 body,
 h1,
@@ -148,9 +148,8 @@ img{
     height: 4px;
     border-radius: 4px;
     background-color: var(--filler-colour);
-
     transform: scaleX(0);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1 );
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav:hover,
 .site-nav:focus,
@@ -163,9 +162,23 @@ img{
 .site-nav:active::after{
     display: block;
     transform: scaleX(1
-    );
+);
     
     
+}
+.current {
+    color: var(--logo-span-color);
+}
+.current::after{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    transform: scaleX(1);
+    background-color: var(--filler-colour);
 }
 .auth-list{
     display:  flex;
@@ -213,30 +226,43 @@ img{
     width: 696px;
     margin: 0 auto;
 }
-/* .modal{
+.modal{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 528px;
+    height: 581px;
     position: absolute;
     background-color: #ffffff;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
 }
-.backdrop .is-hidden{
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
 
-} */
-/* .backdrop{
+.backdrop.is-hidden{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1 ) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1 );
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1 );
 
-} */
+}
+.backdrop{
+    opacity: 1;
+    transform: scaleX(1);
+}
+    
+.close-button{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
 .overlay{
     display: inline-block;
     align-items: center;
@@ -280,6 +306,7 @@ img{
     background-color: inherit;
     color: var(--hero-text-color);
     z-index: 2;
+    cursor: pointer;
 }
 .section{
     padding: 94px 0;
