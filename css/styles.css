@@ -379,7 +379,7 @@ img{
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     color: var(--hero-text-color);
     letter-spacing: 0.03em;
