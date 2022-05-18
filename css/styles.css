@@ -393,29 +393,26 @@ img{
 .what-we-do-element:not(:first-child){
     margin-left: 30px;
 }
-.what-we-do-element::after{
-    content: 'ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ';
-    display: flex;
+.what-we-do-overlay{
+    
     position: absolute;
-    left: 0px;
-    bottom: 0px;
+    bottom: 0%;
+    left: 0%;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+.what-we-do-overlay-text{
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
-    align-items: center;
-    justify-content: center;
-    color: var(--hero-text-color);
+    text-align: center;
     letter-spacing: 0.03em;
-    background-color: rgba(47, 48, 58, 0.8);
-
-}
-.what-we-do-element:nth-child(2)::after {
-    content: 'МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ';
-}
-.what-we-do-element:nth-child(3)::after {
-    content: 'ДИЗАЙНЕРСКИЕ РЕШЕНИЯ';
+    color: var(--hero-text-color);
 }
 .what-we-do-header{
     margin-bottom: 50px;
