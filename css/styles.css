@@ -503,7 +503,7 @@ border-radius: 0px 0px 4px 4px;
     width: 22px;
     height: 22px;
     fill: var(--clients-colour);
-    transition:  fill 500ms cubic-bezier(0.4, 0, 0.2, 1 ), 
+    transition:  fill 500ms cubic-bezier(0.4, 0, 0.2, 1 );
 }
 .team-link:hover .social-team-svg,
 .team-link:focus .social-team-svg{
@@ -609,7 +609,12 @@ letter-spacing: 0.03em;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.6);   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1 );
+}
+
+.footer-second-link:hover,
+.footer-second-link:focus{
+    color: var(--hero-text-color);
 }
 .footer-list-element:not(:last-child){
     margin-bottom: 9px;
@@ -701,7 +706,7 @@ color: var(--hero-text-color);
     color: var(--primary-text-color);
     background-color: var(--portfolio-buttons-background-color);
     cursor: inherit;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1 ), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1 );
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1 ), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1 ), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1 );
 }
 
 
@@ -725,7 +730,6 @@ border-radius: 4px;
 .projects-element{
     background: #FFFFFF;
     box-sizing: border-box;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1 );
 }
 .projects-element{
     margin-left: 30px;
@@ -734,7 +738,6 @@ border-radius: 4px;
 .projects-element:hover,
 .projects-element:focus{
     outline: transparent;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .projects-box{
     padding: 20px 24px;
@@ -753,10 +756,8 @@ border-radius: 4px;
 }
 
 .portfolio-link{
-    position: relative;
     display: block;
     text-decoration: none;
-    box-shadow: none;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .card-thumb{
@@ -775,13 +776,20 @@ border-radius: 4px;
     height: 100%;
     padding: 24px 63px;
     background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1 );
     
+}
+.portfolio-link:hover,
+.portfolio-link:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 .portfolio-link:hover .card-overlay,
 .portfolio-link:focus .card-overlay{
     transform: translateY(0%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1 );
+    
+    
 }
 .card-text{
     position: absolute;
