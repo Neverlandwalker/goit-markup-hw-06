@@ -50,8 +50,39 @@
                 </button>
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                        <p>Some text</p>
-                        <button class="close-button" data-modal-close>X</button>
+                        <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+                        <form class="modal-form" action="">    
+                            <label class="form-element" for="">Имя
+                                <input class="user-information" type="text">
+                            </label>
+                        
+                     
+                            <label class="form-element" >Телефон
+                                <input class="user-phone"  type="tel">
+                            </label>
+                    
+                        
+                            <label class="form-element" >Почта
+                                <input  class="user-email type="email">
+                            </label>
+                       
+                        <label class="form-element" >Коментарий
+                            <textarea placeholder="Введите текст" class="user-commentary">
+
+                            </textarea>
+                        </label>
+                        <label class="form-element" >
+                            <input type="checkbox" value="condition" name="condition"/>Cоглашаюсь с условиями и принимаю  <span  ><a href=""  class="chechbox-underline">Условия договора</a></span>
+                            
+                        </label>
+                        <button class="submit-modal-button" type="submit">Отправить</button>
+                        </form>
+                        <button class="close-button" data-modal-close>
+                            
+                            <svg class="close-button-svg">
+                                <use href="./images/Presprite/Sprite.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
                         </div>
                     </div>
                     
@@ -209,6 +240,14 @@
                 <li class="follow-block-element"><a class="footer-social-links" href=""><svg class="social-footer-svg"><use href="./images/Presprite/Sprite.svg#icon-facebook"></use></svg></a></li>
                 <li class="follow-block-element"><a class="footer-social-links" href=""><svg class="social-footer-svg"><use href="./images/Presprite/Sprite.svg#icon-linkedin"></use></svg></a></li>
             </ul>
+        </div>
+        <div class="sign-division">
+            <h2 class="sign-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+            <form class="sign-form" action="">
+                <input class="sign-input" type="email" placeholder="E-mail">
+                    <buttom class="sign-button">Подписаться</buttom>
+                </input>
+            </form>
         </div>
     </div>
     </footer>

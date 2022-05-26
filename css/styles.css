@@ -241,20 +241,13 @@ img{
     pointer-events: none;
     visibility: hidden;
 }
-.close-button{
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    cursor: pointer;
-}
+
 .modal{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px 41px;
     width: 528px;
     height: 581px;
     background-color: #ffffff;
@@ -309,6 +302,89 @@ img{
 .section{
     padding: 94px 0;
 }
+.modal-form{
+    display: flex;
+    flex-direction: column;
+}
+.form-element{
+    margin-top: 10px;
+}
+.user-information,
+.user-phone,
+.user-email{
+width: 100%;
+height: 40px;
+}
+.user-commentary{
+    width: 100%;
+    height: 120px;
+    padding: 12px 16px;
+
+}
+.user-phone{
+
+}
+.user-email{
+
+}
+.user-commentary{
+
+}
+.submit-modal-button{
+   
+    margin: auto;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    width: 200px;
+    height: 50px;
+    color: var(--hero-text-color);
+    background: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-width: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+}
+.chechbox-underline{
+    color: var(--logo-span-color);
+    text-decoration: underline;
+}
+.modal-text{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.close-button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--hero-text-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.close-button-svg{
+    width: 18px;
+    height: 18px;
+    fill: #000;
+
+}
+.close-button-svg:active{
+    fill: var(--logo-span-color);
+}
+
 /* Adventeges */
 .adventeges-block{
     display: flex;
@@ -816,4 +892,56 @@ border-radius: 4px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--contact-links-color);
+}
+.sign-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: var(--hero-text-color);
+}
+.sign-division{
+    margin-left: 94px;
+}
+.sign-form{
+    display: flex;
+    
+    margin-top: 20px;
+}
+.sign-input{
+    display: inline-flex;
+    padding: 15px 16px;
+    width: 358px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.sign-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    background-color: var(--logo-span-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: var(--hero-text-color);
+}
+.sign-button::after{
+    display: inline-block   ;
+    content: "";
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    fill: var(--hero-text-color);
+}
+.sign-button::after{
+    background-image: url(/images/Presprite/send\ icon.svg)
 }
