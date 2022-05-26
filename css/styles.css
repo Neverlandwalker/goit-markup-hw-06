@@ -313,15 +313,16 @@ img{
 .user-information,
 .user-phone,
 .user-email{
-width: 100%;
-height: 40px;
+    width: 100%;
+    height: 40px;
+    outline: none;
 }
 .user-information,
 .user-phone,
 .user-email,
 .user-commentary{
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1 );
+    
 }
 .user-information:focus,
 .user-phone:focus,
@@ -339,6 +340,7 @@ height: 40px;
     height: 120px;
     padding: 12px 16px;
     resize: none;
+    outline: none;
 }
 .user-phone,
 .user-information,
@@ -976,5 +978,5 @@ border-radius: 4px;
     fill: var(--hero-text-color);
 }
 .sign-button::after{
-    background-image: url(/images/Presprite/send\ icon.svg)
+    background-image: url(./images/Presprite/send\ icon.svg)
 }
