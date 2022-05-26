@@ -309,6 +309,11 @@ img{
 .form-element{
     position: relative;
     margin-top: 10px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    
+    letter-spacing: 0.01em;
 }
 .user-information,
 .user-phone,
@@ -316,6 +321,7 @@ img{
     width: 100%;
     height: 40px;
     outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
 }
 .user-information,
 .user-phone,
@@ -330,10 +336,10 @@ img{
 .user-commentary:focus{
     border: 1px solid #2196F3;
 }
-.user-infomartion:focus ~ .modal.icons,
-.user-phone:focus ~ .modal-icons,
-.user-email:focus ~ .modal-icons{
-    fill: var(--logo-span-color);
+.user-information:focus ~ .label-icon,
+.user-phone:focus ~ .label-icon,
+.user-email:focus ~ .label-icon{
+    fill: var(--logo-span-color);   
 }
 .user-commentary{
     width: 100%;
@@ -351,7 +357,7 @@ img{
 
 .label-icon{
     position: absolute;
-    top: 55%;
+    top: 47%;
     left: 15px;
     width: 18px;
     height: 18px;
@@ -370,9 +376,9 @@ img{
     margin: auto;
     cursor: pointer;
     margin-top: 30px;
-    margin-bottom: 40px;
     width: 200px;
     height: 50px;
+    padding: 0;
     color: var(--hero-text-color);
     background: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -383,6 +389,40 @@ img{
     line-height: 1.88;
     letter-spacing: 0.06em;
 
+}
+.form-element.checkbox{
+    display: flex;
+    align-items: center;
+    margin-left: 36px;
+
+    
+}
+.checkbox-square{
+    position: relative;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+    align-items: center;
+}
+.checkbox-icon{
+    position: absolute;
+    left: -20px;
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 3px solid var(--primary-text-color);
+    border-radius: 3px;
+}
+.checkbox-square:checked + .checkbox-icon{
+    border-color: var(--logo-span-color);
+    background-color: var(--logo-span-color);
+    background-image: url(../images/Presprite/icon-checkbox.svg);
+    background-size: contain;
+    background-origin: border-box;
+}
+.policy{
+    margin-left: 2px;
 }
 .chechbox-underline{
     color: var(--logo-span-color);
@@ -978,5 +1018,5 @@ border-radius: 4px;
     fill: var(--hero-text-color);
 }
 .sign-button::after{
-    background-image: url(./images/Presprite/send\ icon.svg)
+    background-image: url(../images/Presprite/send\ icon.svg)
 }
