@@ -50,32 +50,38 @@
                 </button>
                     <div class="backdrop is-hidden" data-modal>
                         <div class="modal">
-                        <h2 class="modal-text">Оставьте свои данные, мы вам перезвоним</h2>
+                        <strong class="modal-text">Оставьте свои данные, мы вам перезвоним</strong>
                         <form class="modal-form">    
                             <label class="form-element" for="user-information">Имя
+                                <div class="input-father">
                                 <input class="user-information" type="text" name="user-information" id="user-information">
                                 <span class="label-icon"><svg class="modal-icons">
                                     <use href="./images/Presprite/Sprite.svg#user-icon"></use></svg></span>
+                                </div>
                             </label>
                         
                      
                             <label class="form-element" for="user-phone">Телефон
+                                <div class="input-father">
                                 <input class="user-phone"  type="tel" name="user-phone" id="user-phone">
                                 <span class="label-icon"><svg class="modal-icons">
                                     <use href="./images/Presprite/Sprite.svg#user-mail-icon"></use></svg></span>
+                                </div>
                             </label>
                     
                         
                             <label class="form-element" for="user-email">Почта
+                                <div class="input-father">
                                 <input  class="user-email" type="email" name="user-email" id="user-email">
                                 <span class="label-icon"><svg class="modal-icons">
                                     <use href="./images/Presprite/Sprite.svg#user-phone-icon"></use></svg></span>
+                                </div>
                             </label>
                             <label class="form-element" >Коментарий<textarea placeholder="Введите текст" class="user-commentary"></textarea>
                         </label>
                         <label class="form-element checkbox">
                             <input class="checkbox-square" type="checkbox" value="condition" name="checkbox"><span class="checkbox-icon"></span>
-                            Cоглашаюсь с условиями и принимаю
+                            <span class="checkbox-text">Cоглашаюсь с условиями и принимаю</span>
                             <span class="policy"><a href=""  class="chechbox-underline"> Условия договора</a></span>
                         </label>
                         <button class="submit-modal-button" type="submit">Отправить</button>
@@ -245,10 +251,10 @@
             </ul>
         </div>
         <div class="sign-division">
-            <h2 class="sign-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</h2>
+            <p class="sign-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
             <form class="sign-form">
                 <input class="sign-input" type="email" placeholder="E-mail">
-                    <button class="sign-button">Подписаться</button>
+                    <button class="sign-button">Подписаться <span class="paper-jet"></span></button>
             </form>
         </div>
     </div>
