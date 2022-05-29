@@ -476,8 +476,7 @@ img{
     fill: #000;
 
 }
-.close-button-svg:active,
-{
+.close-button-svg:active{
     fill: var(--logo-span-color);
 }
 .close-button:active{
@@ -486,6 +485,7 @@ img{
 .close-button:focus{
     border: 1px solid var(--logo-span-color);
 }
+
 
 /* Adventeges */
 .adventeges-block{
